@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.show_sql">true</property>
+        <property name="dialect">org.hibernate.dialect.SQLServer2016Dialect</property>
+        <property name="use_sql_comments">true</property>
+        <property name="connection.url">
+            jdbc:sqlserver://localhost:1433;databaseName=testdb;trustServerCertificate=true
+        </property>
+        <property name="connection.username">sa</property>
+        <property name="connection.password">abcd1234</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="org.example.Product"/>
+        <mapping class="org.example.Category"/>
+        <mapping class="org.example.Order"/>
+    </session-factory>
+</hibernate-configuration>
