@@ -11,8 +11,9 @@
         <property name="connection.password">abcd1234</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-        <mapping class="org.example.Product"/>
-        <mapping class="org.example.Category"/>
-        <mapping class="org.example.Order"/>
+        <mapping class="org.example.Entity.Product"/>
+        <mapping class="org.example.Entity.Category"/>
+        <mapping class="org.example.Entity.Order"/>
+        <mapping class="org.example.Entity.ProductDetail"/>
     </session-factory>
 </hibernate-configuration>

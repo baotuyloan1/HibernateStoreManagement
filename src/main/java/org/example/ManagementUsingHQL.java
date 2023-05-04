@@ -1,20 +1,21 @@
 package org.example;
 
+import org.example.Entity.Category;
+import org.example.Entity.Order;
+import org.example.Entity.Product;
+import org.example.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import javax.persistence.Query;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-public class Management {
+public class ManagementUsingHQL {
     public static void main(String[] args) throws ParseException {
-        StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
-        SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+
         Session session = sessionFactory.openSession();
 
 //        listQuery(session);
@@ -31,7 +32,7 @@ public class Management {
 //        paginationQuery(session);
 //        addOrder(session);
 //        dateRangeQuery(session);
-        aggregate(session);
+//        aggregate(session);
 //        namedParameters(session);
 
 
@@ -47,7 +48,7 @@ public class Management {
     private static void implicitJoin(Session session) {
         String hql = "from Product where category.name = 'Mobile 1'";
         Query query = session.createQuery(hql);
-        List<Product> objects=  query.getResultList();
+        List<Product> objects = query.getResultList();
         objects.forEach(System.out::println);
     }
 
@@ -56,8 +57,8 @@ public class Management {
         String hql = "from Order where  customerName like :keyword";
         String keyword = "Bao 2";
         Query query = session.createQuery(hql);
-        query.setParameter("keyword","%"+keyword+"%");
-        List<Order> orderList =  query.getResultList();
+        query.setParameter("keyword", "%" + keyword + "%");
+        List<Order> orderList = query.getResultList();
         orderList.forEach(System.out::println);
     }
 
@@ -78,7 +79,7 @@ public class Management {
         countName.forEach(System.out::println);
 
         Query query1 = session.createQuery(hql);
-        Number list =(Number) query.getSingleResult();
+        Number list = (Number) query.getSingleResult();
         System.out.println(list);
 
     }

@@ -1,4 +1,6 @@
-package org.example;
+package org.example.Entity;
+
+import org.example.Entity.Category;
 
 import javax.persistence.*;
 
@@ -12,6 +14,18 @@ public class Product {
     private String description;
 
     private Category category;
+
+    private ProductDetail productDetail;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @PrimaryKeyJoinColumn
+    public ProductDetail getProductDetail() {
+        return productDetail;
+    }
+
+    public void setProductDetail(ProductDetail productDetail) {
+        this.productDetail = productDetail;
+    }
 
     @ManyToOne
     @JoinColumn(name = "CATEGORY_ID")
@@ -59,14 +73,16 @@ public class Product {
         this.price = price;
     }
 
+
     @Override
     public String toString() {
         return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", price=" + price +
                 ", category=" + category +
+                ", productDetail=" + productDetail +
+                ", price=" + price +
                 '}';
     }
 }
