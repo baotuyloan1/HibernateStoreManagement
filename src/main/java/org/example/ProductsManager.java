@@ -1,7 +1,7 @@
 /*
  * ProductsManager.java
  * Copyright by Nguyen Duc Bao
- * Created on 5 - 4 - 2023 (mm-dd-yyyy)
+ * Created on 5 - 5 - 2023 (mm-dd-yyyy)
  */
 
 package org.example;

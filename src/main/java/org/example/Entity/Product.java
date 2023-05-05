@@ -1,3 +1,9 @@
+/*
+ * Product.java
+ * Copyright by Nguyen Duc Bao
+ * Created on 5 - 5 - 2023 (mm-dd-yyyy)
+ */
+
 package org.example.Entity;
 
 import org.example.Entity.Category;
@@ -16,6 +22,16 @@ public class Product {
     private Category category;
 
     private ProductDetail productDetail;
+
+    public Product() {
+    }
+
+    public Product(String name, String description,float price, Category category ) {
+        this.name = name;
+        this.description = description;
+        this.category = category;
+        this.price = price;
+    }
 
     @OneToOne(cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn

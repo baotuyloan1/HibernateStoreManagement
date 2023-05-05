@@ -1,0 +1,61 @@
+
+m
+java:S1192`"KDefine a constant instead of duplicating this literal "yyyy-MM-dd" 6 times.(úšşÙıÿÿÿÿ8†â¸ş0
+
+java:S1130"qRemove the declaration of thrown exception 'java.text.ParseException', as it cannot be thrown from method's body.(ˆ…­Å8‹¥öÈş0
+W	java:S125"<This block of commented-out lines of code should be removed.(„×Ç]8¢â¸ş0
+]	java:S125"<This block of commented-out lines of code should be removed.(¯›½Ÿúÿÿÿÿ8¢â¸ş0
+]	java:S125-"<This block of commented-out lines of code should be removed.(”¡ø¢ùÿÿÿÿ8¢â¸ş0
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(¡œ˜ùÿÿÿÿ8£â¸ş0
+T	java:S106D"9Replace this use of System.out or System.err by a logger.(„²_8¤â¸ş0
+Z	java:S106M"9Replace this use of System.out or System.err by a logger.(Ø¦ˆŞúÿÿÿÿ8¤â¸ş0
+\
+java:S1854W":Remove this useless assignment to local variable "query1".(ÿìŸ¶şÿÿÿÿ8¤â¸ş0
+U	java:S106U"9Replace this use of System.out or System.err by a logger.(·ÑÀ8¥â¸ş0
+M
+java:S1481W"+Remove this unused "query1" local variable.(ÿìŸ¶şÿÿÿÿ8¥â¸ş0
+Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ8§â¸ş0
+T	java:S106d"9Replace this use of System.out or System.err by a logger.(„²_8©â¸ş0
+c
+java:S1854k"ARemove this useless assignment to local variable "dateFormatter".(„ùÚøÿÿÿÿ8§â¸ş0
+T
+java:S1481k"2Remove this unused "dateFormatter" local variable.(„ùÚøÿÿÿÿ8¨â¸ş0
+[	java:S106"9Replace this use of System.out or System.err by a logger.(ß‰”ıÿÿÿÿ8ªâ¸ş0
+^	java:S125•"<This block of commented-out lines of code should be removed.(¤¸ƒ¨şÿÿÿÿ8ªâ¸ş0
+V	java:S106™"9Replace this use of System.out or System.err by a logger.(‹×š·8ªâ¸ş0
+[	java:S106¢"9Replace this use of System.out or System.err by a logger.(Ø¦ˆŞúÿÿÿÿ8«â¸ş0
+V	java:S106­"9Replace this use of System.out or System.err by a logger.(£—ÆÈ8«â¸ş0
+V	java:S106´"9Replace this use of System.out or System.err by a logger.(êœ‰8¬â¸ş0
+[	java:S106¾"9Replace this use of System.out or System.err by a logger.(âùèƒûÿÿÿÿ8¬â¸ş0
+[	java:S106Æ"9Replace this use of System.out or System.err by a logger.(ÈÜÅÒşÿÿÿÿ8¬â¸ş0
+V	java:S106Ğ"9Replace this use of System.out or System.err by a logger.(¡ì‚­8­â¸ş0
+[	java:S106Û"9Replace this use of System.out or System.err by a logger.(Ãü¡Şúÿÿÿÿ8®â¸ş0
+[	java:S106ø"9Replace this use of System.out or System.err by a logger.(ß‰”ıÿÿÿÿ8ô·’¸ş0
+M
+java:S11446"1Remove this unused private "implicitJoin" method.(ôŸÉ98¯â¸ş0
+Q
+java:S1144>"4Remove this unused private "namedParameters" method.(™şĞë8¯â¸ş0
+M
+java:S1144G"0Remove this unused private "searchQuery" method.(Ÿ­8¯â¸ş0
+K
+java:S1144Q".Remove this unused private "aggregate" method.(ó”ü·8’‹óºş0
+U
+java:S1144]"3Remove this unused private "dateRangeQuery" method.(ú±¯¾øÿÿÿÿ8¯â¸ş0
+J
+java:S1144g"-Remove this unused private "addOrder" method.(¥ÚØÅ8¯â¸ş0
+W
+java:S1144…"4Remove this unused private "paginationQuery" method.(ññãøÿÿÿÿ8¯â¸ş0
+O
+java:S1144‘"1Remove this unused private "groupByQuery" method.(É×÷‡8¯â¸ş0
+Q
+java:S1144".Remove this unused private "sortQuery" method.(Ü³·Öùÿÿÿÿ8¯â¸ş0
+Q
+java:S1144¦".Remove this unused private "joinQuery" method.(¯¿ ùÿÿÿÿ8¯â¸ş0
+L
+java:S1144Ê".Remove this unused private "deleteHQL" method.(¸·—8¯â¸ş0
+Q
+java:S1144Ô".Remove this unused private "updateHQL" method.(áìéƒşÿÿÿÿ8¯â¸ş0
+L
+java:S1144ß")Remove this unused private "save" method.(«Ù©ıÿÿÿÿ8¯â¸ş0
+Q
+java:S1144ó".Remove this unused private "listQuery" method.(Ö‰ıüÿÿÿÿ8¯â¸ş0
